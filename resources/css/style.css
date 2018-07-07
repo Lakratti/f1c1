@@ -8,7 +8,6 @@ html {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
-  width: 100%;
 }
 
 .center {
@@ -42,20 +41,16 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  z-index: 99;
-  line-height: 1.4;
 }
 
 header .content {
   display: flex;
   align-items: center;
-  padding: 0 1.875rem;
-  height:  5.3125rem;
+  padding: 1.875rem;
 }
 
 header .logo {
   flex: 1;
-  letter-spacing: 0.25rem;
 }
 
 header nav ul {
@@ -67,7 +62,7 @@ nav li {
 }
 
 nav a {
-  vertical-align: center;
+  vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
@@ -94,7 +89,6 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
-    height: auto;
   }
 
   header .mobile ul {
@@ -122,20 +116,14 @@ header .mobile {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-image: url("../images/banner-landingpage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 10.625rem 6.25rem;
+  height: 43.5rem;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20a;
-
-
+  background-color: #9dc20b;
 }
 
 #sign-up-cta .content {
@@ -177,17 +165,15 @@ header .mobile {
   #sign-up-section {
     align-items: center;
     justify-content: center;
-    height: 100%;
-
+    height: 28rem;
   }
 
   #sign-up-cta {
     position: static;
-    /* width: auto;
-    height: auto; */
+    width: auto;
+    height: auto;
     background-color: transparent;
     border: none;
-    padding:  0 5rem 2.5rem 5rem;
   }
 
   #sign-up-cta .content {
@@ -225,10 +211,9 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
-  height: 31.6875rem;
 }
 
 .feature {
@@ -236,8 +221,6 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  /* box-sizing: border-box; */
-
 }
 
 .feature .image-container {
@@ -246,16 +229,9 @@ header .mobile {
   margin: 0 auto;
 }
 
-.image-container img {
-  max-width: 100%;
-  max-height: auto;
-
-}
-
 .feature h2 {
-  padding-top: 2.5rem;
+  padding-bottom: .5rem;
   font-size: 2.25rem;
-  line-height: 1.2;
   font-weight: bold;
   color: #4a4a4a;
 }
@@ -263,7 +239,7 @@ header .mobile {
 .feature h3 {
   font-size: 1rem;
   line-height: 1.2;
-  font-weight: lighter;
+  font-weight: 300;
   color: #4a4a4a;
 }
 
@@ -297,7 +273,6 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
-  width: 100%;
 }
 
 #filters-section .content {
@@ -321,11 +296,6 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
-  display: flex;
-}
-
-.image-container img {
-
 }
 
 @media only screen and (max-width: 760px) {
@@ -364,11 +334,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section .content {
+#quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section .quote {
+#quotes-section quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -377,7 +347,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section .quote-citation {
+#quotes-section quote-citation {
   height: 1.875rem;
 }
 
