@@ -28,7 +28,7 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: /*760px*/760px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -79,8 +79,28 @@ header .icon {
 header .mobile {
   display: none;
 }
+/* @media only screen and (max-width: 1024px) and (min-width: 760px) {
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  .mobile ul li {
+    display: none;
 
-@media only screen and (max-width: 760px) {
+  }
+  .mobile ul li .button {
+    display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+
+}
+ */
+
+
+@media only screen and (max-width: /*760px*/760px) {
   header .desktop {
     display: none;
   }
@@ -355,6 +375,9 @@ header .mobile {
 
 #quotes-section .content {
   padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #quotes-section .quote {
@@ -384,10 +407,19 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+    float: clear;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #quotes-section div.content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Footer */
+
+
 
 footer {
   background-color: #9b9b9b;
